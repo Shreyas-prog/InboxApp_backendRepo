@@ -3,7 +3,7 @@ import Task from '../models/Task.js';
 import { v4 as uuidv4 } from 'uuid';
 
 export const getAllTasks = async (req, res) => {
-  const tasks = await Task.find().sort({ createdAt: -1 });
+  const tasks = await Task.find().sort({ createdAt: 1 });
   res.json(tasks);
 };
 
