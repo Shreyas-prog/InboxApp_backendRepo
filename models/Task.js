@@ -9,6 +9,7 @@ const taskSchema = new mongoose.Schema({
   displayEditOptions: Boolean,
   priorityType: String,
   isCompleted: Boolean,
+  selectedDate: String,
   extraFields: mongoose.Schema.Types.Mixed
 }, { timestamps: true });
 
